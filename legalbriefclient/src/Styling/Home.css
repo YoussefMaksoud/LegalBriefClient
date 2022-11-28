@@ -1,0 +1,226 @@
+#home-container{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#slogan{
+   background-image: url(../Assets/build-image.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding-left: 5%;
+   text-align: center;
+   padding-top: 30px;
+   padding-bottom: 30px;
+   height: 800px;
+}
+
+#slogan-text{
+    color: white;
+    font-weight: 200;
+    font-size: 75px;
+    padding-right: 20px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+#goal{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    padding-bottom: 50px;
+}
+
+#goal-left{
+    flex-grow: 1;
+    background-color: black;
+}
+
+#goal-right{
+    background-color: black;
+    height: 300px;
+    width: 60%;
+    height: 500px;
+}
+
+#img-1{
+    width: 500px;
+    padding: 90px 0;
+    padding-right: 200px;
+}
+
+#goal-title{    
+    padding-top: 20px;
+    color: white;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+}
+
+#goal-content-1{
+    color: white;
+    text-align: center;
+    padding-left: 300px;
+    padding-right: 300px;
+    font-size: 20px;
+    word-spacing: 1px;
+    font-weight: 10;
+    line-height: 40px;
+    padding-bottom: 60px;
+}
+
+#goal-content-2{
+    color: white;
+    text-align: center;
+    padding-left: 300px;
+    padding-right: 300px;
+    font-size: 20px;
+    word-spacing: 1px;
+    font-weight: 10;
+    line-height: 40px;
+}
+
+#how-we-help{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 300px;
+}
+
+#how-we-help-title{
+    color: white;
+    font-weight: 100;
+    text-align: center;
+}
+
+#hwh-icon-1{
+    height: 350px;
+    background-color: rgb(0, 0, 0);
+    flex-grow: 1;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+#hwh-icon-2{
+    height: 350px;
+    background-color: rgb(0, 0, 0);
+    flex-grow: 1;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+#hwh-icon-3{
+    height: 350px;
+    background-color: rgb(0, 0, 0);
+    flex-grow: 1;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+#hwh-icon-4{
+    height: 350px;
+    background-color: rgb(0, 0, 0);
+    flex-grow: 1;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 900px){
+    #home-container{
+        background-color: black;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    #slogan{
+       background-color: gray;
+       padding-left: 5%;
+       text-align: center;
+       padding-top: 30px;
+       padding-bottom: 30px;
+    }
+    
+    #slogan-text{
+        color: white;
+        font-weight: 200;
+        font-size: 25px;
+        padding-right: 20px;
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+    
+    #goal{
+        flex-direction: column;
+    }
+    
+    #goal-left{
+        
+    }
+    
+    #goal-right{
+        background-color: red;
+        height: 300px;
+        width: 100%;
+    }
+    
+    #goal-title{    
+        padding-top: 20px;
+        color: white;
+        font-weight: 100;
+        text-align: center;
+    }
+    
+    #goal-content-1{
+        color: white;
+        text-align: center;
+        padding: 50px;
+        word-spacing: 1px;
+        font-weight: 10;
+        line-height: 25px;
+    }
+    
+    #goal-content-2{
+        color: white;
+        text-align: center;
+        padding: 50px;
+        word-spacing: 1px;
+        font-weight: 10;
+        line-height: 25px;
+    }
+    
+    #how-we-help{
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0px;
+    }
+    
+    #how-we-help-title{
+        color: white;
+        font-weight: 100;
+        text-align: center;
+    }
+    
+    #hwh-icon-1{
+        height: 350px;
+        background-color: white;
+    }
+    
+    #hwh-icon-2{
+        height: 350px;
+        background-color: red;
+    }
+    
+    #hwh-icon-3{
+        height: 350px;
+        background-color: white;
+    }
+    
+    #hwh-icon-4{
+        height: 350px;
+        background-color: red;
+    }
+}
+
+

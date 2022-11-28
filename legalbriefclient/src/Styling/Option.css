@@ -1,0 +1,58 @@
+#op-container{
+    background-color: rgb(0, 0, 0);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    height: 100px;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+#op-container:hover{
+    background-color: #818181;
+    transition: ease-in-out 0.4s;
+}
+
+#check{
+    width: 100px;
+    text-align: center;
+    padding: 38px 0;
+}
+
+#op-container:hover > #check{
+    background-image: url('../Assets/check.png');
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    transition: ease-in-out 0.1s;
+}
+
+#op-content{
+    flex-grow: 1;
+}
+
+#more-info{
+    width: 100px;
+    text-align: center;
+    padding: 40px 0;
+}
+
+#more-info:hover{
+    background-color: rgb(72, 72, 72);
+    transition: ease-in-out 0.4s;
+    border-radius: 40px;
+}
+
+#op-name{
+    margin-bottom: 20px;
+}
+
+#op-description{
+    height: 30%;
+    font-size: 15px;
+}

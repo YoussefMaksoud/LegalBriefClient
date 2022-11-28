@@ -1,0 +1,21 @@
+#sol-container{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-image: url('../Assets/solution.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#option-container{
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+
+#option-container > h1{
+    margin-left: 9%;
+    font-size: 50px;
+}
+
+#option-container > h2{
+    margin-left: 9%;
+}

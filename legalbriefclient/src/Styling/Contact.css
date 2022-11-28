@@ -1,0 +1,154 @@
+#contact-container{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#contact-background{
+    background-image: url('../Assets/contact.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+}
+
+#contact-title{
+    font-size: 100px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding: 10px;
+    padding-left: 10%;
+}
+
+#any-questions{
+    font-size: 30px;
+    text-align: center;
+}
+
+#contact-content{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 100px;
+}
+
+#contact-form-left{
+    flex-grow: 1;
+    padding-left: 15%;
+    padding-top: 50px;
+}
+
+#contact-form{
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form > label{
+    margin-bottom: 5px;
+}
+
+#comments{
+    height: 50px;
+    width: 500px;
+    margin-bottom: 20px;
+    border-width: 1px;
+    background-color: #0C0C0C;
+    border-color: #343E9A;
+    border-radius: 3px;
+    max-width: 500px;
+    min-width: 500px;
+    max-height: 200px;
+    min-height: 150px;
+}
+
+#sub{
+    background-color: #343E9A;
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 3px;
+    color: white;
+}
+
+#contact-form > label > input{
+    height: 50px;
+    width: 500px;
+    margin-bottom: 20px;
+    border-width: 1px;
+    background-color: #0C0C0C;
+    border-color: #343E9A;
+    border-radius: 3px;
+}
+
+#contact-form > input{
+    height: 30px;
+    width: 100px;
+}
+
+#point-of-contact{
+    flex-grow: 1;
+    padding-left: 10%;
+    padding-top: 50px;
+}
+
+#poc-title{
+    font-size: 30px;
+}
+
+.poc-item{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 45px;
+}
+
+.poc-icon{
+    background-color: rgb(0, 0, 0);
+    height: 60px;
+    width: 60px;
+    margin-top: 20px;
+}
+
+.poc-icon > img{
+    height: 60px;
+    width: 60px;
+}
+
+.poc-content{
+    padding-left: 20px;
+    background-color: rgb(0, 0, 0);
+}
+
+@media only screen and (max-width: 900px){
+    #contact-content{
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 100px;
+    }
+
+    #comments{
+        height: 50px;
+        width: 350px;
+        margin-bottom: 20px;
+        border-width: 1px;
+        background-color: #0C0C0C;
+        border-color: #343E9A;
+        border-radius: 3px;
+        max-width: 350px;
+        min-width: 350px;
+        max-height: 200px;
+        min-height: 150px;
+    }
+
+    #contact-form > label > input{
+        height: 50px;
+        width: 350px;
+        margin-bottom: 20px;
+        border-width: 1px;
+        background-color: #0C0C0C;
+        border-color: #343E9A;
+        border-radius: 3px;
+    }
+}
+
+
