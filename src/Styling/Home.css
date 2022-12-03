@@ -204,22 +204,46 @@
     
     #hwh-icon-1{
         height: 350px;
-        background-color: white;
+        background-color: black;
+        border: 5px solid;
+        text-align: center;
+        border: 5px solid;
+        margin: auto;
+        width: 50%;
+        padding: 10px;
     }
     
     #hwh-icon-2{
         height: 350px;
-        background-color: red;
+        background-color: black;
+        border: 5px solid;
+        text-align: center;
+        border: 5px solid;
+        margin: auto;
+        width: 50%;
+        padding: 10px;
     }
     
     #hwh-icon-3{
         height: 350px;
-        background-color: white;
+        background-color: black;
+        border: 5px solid;
+        text-align: center;
+        border: 5px solid;
+        margin: auto;
+        width: 50%;
+        padding: 10px;
     }
     
     #hwh-icon-4{
         height: 350px;
-        background-color: red;
+        background-color: black;
+        border: 5px solid;
+        text-align: center;
+        border: 5px solid;
+        margin: auto;
+        width: 50%;
+        padding: 10px;
     }
 }
 
