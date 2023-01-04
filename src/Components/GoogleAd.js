@@ -8,10 +8,8 @@ class GoogleAd extends Component{
     render(){
         return(
             <div id = 'ad-container'>
-                <script
-                    async
-                    src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
-
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1359209284830626"
+                        crossorigin="anonymous">        
                 </script>
                 <ins 
                     className="adsbygoogle"
