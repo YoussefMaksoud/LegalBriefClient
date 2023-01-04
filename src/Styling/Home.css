@@ -128,18 +128,21 @@
     font-size: 30px;
 }
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 400px){
     #home-container{
         background-color: black;
         font-family: Arial, Helvetica, sans-serif;
     }
     
     #slogan{
-       background-color: gray;
-       padding-left: 5%;
-       text-align: center;
-       padding-top: 30px;
-       padding-bottom: 30px;
+        background-image: url(../Assets/build-image.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-left: 5%;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        height: 200px;
     }
     
     #slogan-text{
@@ -208,9 +211,7 @@
     #img-1{
         text-align: center;
         margin: auto;
-        width: 80%;
-        padding: 10px;
-        background-color: red;
+        width: 200px;
     }
     
     #hwh-icon-1{
@@ -220,7 +221,7 @@
         margin: auto;
         width: 50%;
         padding: 10px;
-        margin-top: 50px;
+        margin-top: 30px;
     }
         
     #hwh-icon-1 > img{

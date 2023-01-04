@@ -72,10 +72,12 @@ transform: translate3d(0, 0.2em, 0);
 
 .navbar-logo-mobile{
     flex-grow: 1;
+    width: 320px;
 }
 
 .hamburger {
     background-color: black;
+    flex-grow: 1;
     height: 100%;
     width: 80px;
     display: flex;
@@ -99,7 +101,7 @@ transform: translate3d(0, 0.2em, 0);
 .NavMenu-Mobile {
     background-color: black;
     list-style: none;
-    width: 96%;
+    width: 400px;
     text-align: center;
     margin-left: -10px;
     margin-top: 0px;
