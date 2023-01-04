@@ -31,6 +31,7 @@
     display: flex;
     flex-direction: row;
     padding-bottom: 100px;
+
 }
 
 #contact-form-left{
@@ -70,6 +71,11 @@
     color: white;
 }
 
+#sub:hover{
+    background-color: #6974d8;
+    transition: ease-in-out 0.4s;
+}
+
 #contact-form > label > input{
     height: 50px;
     width: 500px;
@@ -78,11 +84,16 @@
     background-color: #0C0C0C;
     border-color: #343E9A;
     border-radius: 3px;
+    color: white;
 }
 
 #contact-form > input{
     height: 30px;
     width: 100px;
+}
+
+#contact-form > textarea{
+    color: white;
 }
 
 #point-of-contact{

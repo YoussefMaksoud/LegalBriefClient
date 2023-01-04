@@ -34,6 +34,7 @@ class SolutionPage extends Component{
     nextPage(parent){
         RequestHelpers.getNextOption(parent).then((response) => {
             this.setState({option_list: response.data.message});
+            console.log("Next Page");
             console.log(this.state.option_list[0]);
         }).catch(function(ex){
             console.log("error:", ex);

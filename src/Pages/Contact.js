@@ -5,8 +5,38 @@ import '../Styling/Contact.css'
 import Phone from '../Assets/phone.png';
 import Email from '../Assets/emial.png';
 import LinkedIn from '../Assets/linkedin.png';
+import RequestHelpers from '../Helpers/RequestHelpers';
+import GoogleAd from '../Components/GoogleAd';
 
 class ContactPage extends Component{
+
+    constructor(props){
+        super(props);
+        this.state = {
+            fname: '',
+            lname: '',
+            email: '',
+            message: ''
+        };
+
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+    }
+
+    handleChange(event){
+        this.setState({
+            [event.target.name]: event.target.value
+        });
+    }
+
+    handleSubmit(event){
+        event.preventDefault();
+        console.log("Sent email");
+
+        RequestHelpers.sendEmail(this.state);
+    }
+
+
     render(){
         return(
             <div id = 'contact-container'>
@@ -18,22 +48,22 @@ class ContactPage extends Component{
                     <h2 id = 'any-questions'>Any Questions?</h2>
                     <div id = 'contact-content'>
                         <div id = 'contact-form-left'>
-                            <form id = 'contact-form'>
+                            <form id = 'contact-form' onSubmit={this.handleSubmit}>
                                 <label>
                                     First Name <br></br>
-                                    <input className = 'cont-input' type = 'text' name = 'First Name'/>
+                                    <input className = 'cont-input' type = 'text' name = 'fname' onChange={this.handleChange}/>
                                 </label>
                                 <label>
                                     Last Name <br></br>
-                                    <input type = 'text' name = 'Last Name'/>
+                                    <input type = 'text' name = 'lname' onChange={this.handleChange}/>
                                 </label>
                                 <label>
                                     Email <br></br>
-                                    <input type = 'text' name = 'Email'/>
+                                    <input type = 'text' name = 'email' onChange={this.handleChange}/>
                                 </label>
                                 <label>
-                                    Comments <br></br>
-                                    <textarea id = 'comments' type = 'text' name = 'Comments'/>
+                                    Message <br></br>
+                                    <textarea id = 'comments' type = 'text' name = 'message' onChange={this.handleChange} style={{color: "white"}}/>
                                 </label>
                                 <input id = 'sub' type = 'submit' value = 'SUBMIT'/>
                             </form>
@@ -60,6 +90,9 @@ class ContactPage extends Component{
                                     <h4 className = 'poc-type'>Phone Number</h4>
                                     <h4 className = 'poc'>+1 (403) 999-9720</h4>
                                 </div>
+                            </div>
+                            <div id = 'ad-1'>
+                                <GoogleAd slot = '6699527336'/>
                             </div>
                         </div>
                     </div>
