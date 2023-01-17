@@ -10,7 +10,7 @@ class RequestHelpers{
 
     //returns the children of the selected option
     getNextOption(parent){
-        var request = "https://legalbriefserver.herokuapp.com/nextOptionSet" + parent;
+        var request = "https://legalbriefserver.herokuapp.com/nextOptionSet/" + parent;
         console.log(parent);
         //var request = "http://localhost:3000/nextOptionSet/" + parent;
         return axios.get(request);
@@ -18,7 +18,7 @@ class RequestHelpers{
 
     sendEmail(content){
         console.log(content);
-        axios.post('https://legalbriefserver.herokuapp.com/send-email', content)
+        axios.post('https://legalbriefserver.herokuapp.com/send-email/', content)
         //axios.post('http://localhost:3000/send-email', content)
         .then(response => {
             console.log(response.data);
