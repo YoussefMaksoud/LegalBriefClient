@@ -7,6 +7,7 @@ import Email from '../Assets/emial.png';
 import LinkedIn from '../Assets/linkedin.png';
 import RequestHelpers from '../Helpers/RequestHelpers';
 import GoogleAd from '../Components/GoogleAd';
+import FaqPage from './Faq';
 
 class ContactPage extends Component{
 
@@ -43,7 +44,8 @@ class ContactPage extends Component{
                 <Navbar/>
                 <div id = 'contact-background'>
                     <h1 id = 'contact-title'>Contact Us</h1>
-                </div>    
+                </div>
+                <FaqPage/>    
                 <div>
                     <h2 id = 'any-questions'>Any Questions?</h2>
                     <div id = 'contact-content'>

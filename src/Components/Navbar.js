@@ -11,7 +11,7 @@ class Navbar extends Component{
         this.state = {
             width: 0,
             height: 0,
-            isMobile: window.innerWidth <= 500,
+            isMobile: window.innerWidth <= 900,
             navOpen: false
         };
         this.updateDimenstions = this.updateDimenstions.bind(this);

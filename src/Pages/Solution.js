@@ -25,7 +25,7 @@ class SolutionPage extends Component{
     setOptionInitial(){
         RequestHelpers.getInitialOptions().then((response) => {
             this.setState({option_list: response.data.message});
-            console.log(this.state.option_list[0]);
+            console.log(this.state.option_list[1]);
         }).catch(function(ex){
             console.log("error:", ex);
         });
@@ -49,10 +49,11 @@ class SolutionPage extends Component{
                     <h1>Questionnaire</h1>
                     <h2>Please select the option that applies best:</h2>
                     {this.state.option_list.map((item) => {
-                        return  <div className = "option-cont">
-                                    <Option id = "option" onClick = {() => this.nextPage(item.option_name)}
+                        return  <div className = "option-cont" onClick = {() => this.nextPage(item.option_id)}>
+                                    <Option id = "option" 
                                             option_name = {item.option_name}
                                             option_description = {item.option_description}
+                                            option_id = {item.option_id}
                                     />
                                 </div>
                     })}
