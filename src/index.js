@@ -12,6 +12,7 @@ import AboutPage from './Pages/About';
 import ContactPage from './Pages/Contact';
 import SolutionPage from './Pages/Solution';
 import FaqPage from './Pages/Faq';
+import Destination from './Pages/Destination';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -22,7 +23,7 @@ root.render(
         <Route path = '/about' element = {<AboutPage/>}></Route>
         <Route path = '/contact' element = {<ContactPage/>}></Route>
         <Route path = '/solution' element = {<SolutionPage/>}></Route>
-        <Route path = '/faq' element = {<FaqPage/>}/>
+        <Route path = '/results' element = {<Destination/>}/>
       </Routes>
     </Router>
   </React.StrictMode>

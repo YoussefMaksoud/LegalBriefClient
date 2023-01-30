@@ -1,0 +1,59 @@
+#dest-container{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin: 200px 600px 300px 600px;
+    display: flex;
+    flex-direction: row;
+    height: 650px;
+}
+
+#dest-left{
+    flex-grow: 1;
+    width: 50%;
+}
+
+#dest-right{
+    background-color: red;
+    flex-grow: 1;
+    width: 50%;
+}
+
+#dest-title{
+    padding-left: 5%;
+    font-size: 60px;
+}
+
+#dest-description{
+        padding-left: 5%;
+        padding-right: 5%;
+        line-height: 25px;
+}
+
+#dest-break{
+    color: white;
+    width: 80%;
+    margin-left: 5%;
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, #a1a1a1, #000000);
+}
+
+#close{
+    background-color: white;
+    margin: 5%;
+    height: 30px;
+    width: 100px;
+    border-radius: 1px;
+    border-width: 1px;
+    border-color: white;
+    background-color: black;
+    background-size: 0px;
+    color: white;
+}
+
+#close:hover{
+    background-color: #343E9A;
+    border-color: #343E9A;
+    transition: ease-in-out 0.4s;
+}

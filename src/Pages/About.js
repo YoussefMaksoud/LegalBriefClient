@@ -11,14 +11,36 @@ class AboutPage extends Component{
                 <div id = 'about-container'>
                     <Navbar/>
                     <div id = 'about-legalbrief'>
+                        <div id = 'about-us'>About Us</div>
                         <div id = 'about-left'>
-                            <h1 id = 'about-title'>About Legalbrief</h1>
+                            <h1 id = 'about-title'>Who we Are</h1>
                             <p id = 'about-content'>
-                                At LegalBrief, we want to make Legal <br></br>
-                                information accessible to everyone <br></br>
+                                At LegalBrief, we want to make Legal 
+                                information accessible to everyone 
                                 regardless of economic resources, <br></br>
-                                prior knowledge, or familiarity with <br></br>
-                                legislation. 
+                                prior knowledge, or familiarity with 
+                                legislation. We want to provide users with a 
+                                seamless diagnostic<br></br> to identify and provide
+                                the applicable legislation in an accessible manner 
+                                and provide nearby<br></br> resources that match each 
+                                individual situation.
+                            </p>
+                            <h1 id = 'inspiration-title'>Inspiration</h1>
+                            <p id = 'inspiration'>
+                                Everybody is affected by the legal system, in 
+                                one way or another. It can be overwhelming and <br></br>
+                                disparaging when you are put in complex legal 
+                                situations. Our goal is to provide an accessible 
+                                way for the <br></br>everyday individual to approach these 
+                                situations from a strong, which comes from knowledge<br></br> 
+                                of their specific situations
+                            </p>
+                            <h1 id = 'why-title'>Why Legalbrief</h1>
+                            <p id = 'why'>
+                                Here at LegalBrief, we believe that the legal system
+                                should be something that protects and represents everyone. <br></br>
+                                In order to achieve this, it needs to be accessible to everyone, 
+                                not just those who have access to legal representation
                             </p>
                         </div>
                         <div id = 'about-right'>
@@ -29,15 +51,14 @@ class AboutPage extends Component{
                         <h1 id = 'core-values-title'>Core Values</h1>
                         <h2 id = 'core-value-1'>Accessibility</h2>
                         <p id = 'core-content-1'> 
-                            Provide nearby resources that <br></br>
-                            match each individual situation in <br></br>
-                            an accessible manner
+                            Provide nearby resources that 
+                            match each individual situation in 
+                            an accessible manner. We want to provide users with a 
+                            seamless diagnostic to identify and 
+                            provide the applicable legislation.
                         </p>
-                        <h2 id = 'core-value-2'>Seamlessness</h2>
-                        <p id = 'core-content-2'>
-                            We want to provide users with a <br></br>
-                            seamless diagnostic to identify and <br></br>
-                            provide the applicable legislation. 
+                        <h2 id = 'core-value-2'>Education</h2>
+                        <p id = 'core-content-2'> 
                         </p>
                     </div>
                     <div id = 'executive-team'>

@@ -18,8 +18,10 @@ class HomePage extends Component{
                     <h1 id = 'slogan-text'>Get Help Navigating the Complexities of the Canadian Justice System</h1>
                 </div>
                 <div id = 'goal'>
+                    <div id = 'goal-right'>
+                        This Is Legalbrief
+                    </div>
                     <div id = 'goal-left'>
-                        <h2 id = 'goal-title'>Our Goal</h2>
                         <p id = 'goal-content-1'>Here at LegalBrief, we want to provide the legal
                                                 information that you may need to guide the various 
                                                 legal situations you may come across in your life.
@@ -31,10 +33,8 @@ class HomePage extends Component{
                                                 successful in their ventures.  
                         </p>
                     </div>
-                    <div id = 'goal-right'>
-                        <img id = 'img-1' src = {Cons}></img>
-                    </div>
                 </div>
+                <hr id = 'seperator'></hr>
                 <h2 id = 'how-we-help-title'>How We Help</h2>
                 <div id = 'how-we-help'>
                     <div id = 'hwh-icon-1'>

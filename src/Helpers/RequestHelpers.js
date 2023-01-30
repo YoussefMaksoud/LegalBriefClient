@@ -18,7 +18,7 @@ class RequestHelpers{
 
     sendEmail(content){
         console.log(content);
-        axios.post('https://legalbriefserver.herokuapp.com/send-email/', content)
+        axios.post('https://legalbriefserver.herokuapp.com/send-email', content)
         //axios.post('http://localhost:3000/send-email', content)
         .then(response => {
             console.log(response.data);

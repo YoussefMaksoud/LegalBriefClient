@@ -1,3 +1,8 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 #about-container{
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
@@ -7,13 +12,28 @@
 #about-legalbrief{
     display: flex;
     flex-direction: row;
-    padding-top: 100px;
     padding-bottom: 100px;
     flex-wrap: wrap;
 }
 
+#about-us{
+    background-image: url(../Assets//legal\ background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
+    padding-left: 10%;
+    padding-top: 15%;
+    font-size: 100px;
+    font-weight: 700;
+    justify-content: center;
+    width: 100%;
+    min-height: 400px;
+    max-height: 400px;
+}
+
 #about-left{
     flex-grow: 1;
+    width: 100px;
     padding-left: 10%;
 }
 
@@ -21,10 +41,28 @@
     font-size: 75px;
 }
 
-#about-content{
-    font-size: 25px;
-    line-height: 65px;
+#inspiration-title{
 
+}
+
+#why-title{
+
+}
+
+#about-content{
+    font-size: 16px;
+    line-height: 40px;
+
+}
+
+#inspiration{
+    font-size: 16px;
+    line-height: 40px;
+}
+
+#why{
+    font-size: 16px;
+    line-height: 40px;
 }
 
 #about-pic > img{
@@ -33,10 +71,11 @@
 
 #about-right{
     background-color: black;
-    margin-left: 5%;
     margin-right: 10%;
     height: 500px;
-    width: 500px;
+    padding-top: 200px;
+    justify-content: center;
+    width: 400px;
 }
 
 #core-values{
@@ -44,7 +83,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 100px;
-    padding-left: 5%;
+    padding-left: 10%;
 }
 
 #core-values-title{
@@ -54,17 +93,18 @@
 }
 
 #core-value-1{
-    font-size: 30px;
+    font-size: 23px;
 }
 
 #core-content-1{
-    font-size: 25px;
-    line-height: 65px;
-    margin-bottom: 200px;
+    font-size: 18px;
+    padding-right: 40%;
+    line-height: 45px;
+    margin-bottom: 50px;
 }
 
 #core-value-2{
-    font-size: 30px;
+    font-size: 23px;
 }
 
 #core-content-2{
@@ -84,6 +124,7 @@
 
 #executive-title{
     font-size: 75px;
+    padding-left: 5%;
 }
 
 #julian-picture{
@@ -102,10 +143,10 @@
 }
 
 #founder-bio{
-    font-size: 28px;
+    font-size: 20px;
     text-align: center;
     padding-bottom: 100px;
-    line-height: 45px;
+    line-height: 35px;
 }
 
 @media(max-width: 400px){
@@ -118,9 +159,34 @@
     #about-legalbrief{
         display: flex;
         flex-direction: column;
-        padding-top: 100px;
-        padding-bottom: 200px;
         flex-wrap: wrap;
+        padding-bottom: 0px;
+    }
+
+    #about-us{
+        /*background-image: url(../Assets//legal\ background.jpeg);*/
+        background-repeat: no-repeat;
+        text-align: left;
+        padding-left: 10%;
+        padding-top: 15%;
+        font-size: 100px;
+        font-weight: 700;
+        justify-content: center;
+        width: 345px;
+    }
+
+    #inspiration{
+        font-size: 14px;
+        line-height: 40px;
+    }
+    
+    #why{
+        font-size: 14px;
+        line-height: 40px;
+    }
+    
+    #about-pic > img{
+        max-height: 400px;
     }
 
     #about-title{
@@ -129,18 +195,17 @@
     
     #about-left{
         flex-grow: 1;
-        padding-left: 10%;
         width: 400px;
     }
 
     #about-left > h1{
-        font-size: 60px;
+        font-size: 40px;
     }
 
     #about-left > p{
-        font-size: 20px;
-        text-align-last: auto;
-        line-height: 50px;
+        font-size: 16px;
+        line-height: 40px;
+        width: 320px;
     }
     
     #about-title{
@@ -155,12 +220,14 @@
     
     #about-pic > img{
         width: 300px;
-        padding-left: 10%;
+        padding-left: 50px;
     }
     
     #about-right{
-        background-color: black;
-        width: 300px;
+        background-color: rgb(0, 0, 0);
+        width: 384px;
+        height: 450px;
+        padding-top: 50px;
     }
     
     #core-values{
@@ -172,7 +239,6 @@
     }
     
     #core-values-title{
-        padding-top: 50px;
         padding-bottom: 25px;
         font-size: 75px;
         padding-left: 5%;
@@ -186,7 +252,7 @@
     #core-content-1{
         font-size: 20px;
         text-align-last: auto;
-        line-height: 50px;
+        line-height: 40px;
         padding-left: 5%;
     }
     
@@ -198,7 +264,7 @@
     #core-content-2{
         font-size: 20px;
         text-align-last: auto;
-        line-height: 50px;
+        line-height: 40px;
         padding-left: 5%;
     }
     

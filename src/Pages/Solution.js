@@ -39,6 +39,8 @@ class SolutionPage extends Component{
         }).catch(function(ex){
             console.log("error:", ex);
         });
+
+        console.log(this.state.option_list);
     }
 
     render(){
