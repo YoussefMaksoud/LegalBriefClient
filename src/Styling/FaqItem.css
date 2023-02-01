@@ -21,8 +21,9 @@
         border-width: 1px;
         border-color: #6974d8;
         font-size: 20px;
-        width: 80%;
+        width: 74%;
         margin-left: 10%;
+        height: 10px;
     }
     
     #response{

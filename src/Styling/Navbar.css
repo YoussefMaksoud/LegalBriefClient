@@ -66,13 +66,14 @@ transform: translate3d(0, 0.2em, 0);
     font-size: 1.5rem;
     padding-left: 20px;
     color: white;
-    width: 100%;
+    width: 390px;
     margin-left: -10px;
 }
 
 .navbar-logo-mobile{
     flex-grow: 1;
     width: 320px;
+    height: 40px;
 }
 
 .hamburger {
@@ -108,17 +109,19 @@ transform: translate3d(0, 0.2em, 0);
 }
 
 .NavMenu-Mobile > li {
-    height: 60px;
-    padding-top: 40px;
+    height: 20px;
+    padding-top: 15px;
+    padding-bottom: 10px;
     padding-right: 30px;
     margin-left: -37px;
     vertical-align: middle;
 }
 
 .NavMenu-Mobile > li:nth-child(odd) {
-    background-color: rgb(35, 35, 35);
+    background-color: rgb(0, 0, 0);
 }
 
 .NavMenu-Mobile > li:nth-child(even) {
-    background-color: rgb(0, 0, 0);
+    
+    background-color: rgb(35, 35, 35);
 }

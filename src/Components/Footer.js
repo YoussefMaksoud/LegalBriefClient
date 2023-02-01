@@ -13,10 +13,10 @@ class Footer extends Component{
                     <div id = 'footer-left'>
                         <h2 id = 'footer-title-left'>ABOUT</h2>
                         <p id = 'footer-content-left'>
-                            At LegalBrief, we want to make Legal <br></br>
-                            information accessible to everyone <br></br>
-                            regardless of economic resources,<br></br>
-                            prior knowledge, or familiarity with <br></br>
+                            At LegalBrief, we want to make Legal 
+                            information accessible to everyone 
+                            regardless of economic resources,
+                            prior knowledge, or familiarity with 
                             legislation. 
                         </p>
                     </div>

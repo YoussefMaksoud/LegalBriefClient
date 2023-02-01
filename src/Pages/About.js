@@ -17,28 +17,28 @@ class AboutPage extends Component{
                             <p id = 'about-content'>
                                 At LegalBrief, we want to make Legal 
                                 information accessible to everyone 
-                                regardless of economic resources, <br></br>
+                                regardless of economic resources, 
                                 prior knowledge, or familiarity with 
                                 legislation. We want to provide users with a 
-                                seamless diagnostic<br></br> to identify and provide
+                                seamless diagnostic to identify and provide
                                 the applicable legislation in an accessible manner 
-                                and provide nearby<br></br> resources that match each 
+                                and provide nearby resources that match each 
                                 individual situation.
                             </p>
                             <h1 id = 'inspiration-title'>Inspiration</h1>
                             <p id = 'inspiration'>
                                 Everybody is affected by the legal system, in 
-                                one way or another. It can be overwhelming and <br></br>
+                                one way or another. It can be overwhelming and 
                                 disparaging when you are put in complex legal 
                                 situations. Our goal is to provide an accessible 
-                                way for the <br></br>everyday individual to approach these 
-                                situations from a strong, which comes from knowledge<br></br> 
+                                way for the everyday individual to approach these 
+                                situations from a strong, which comes from knowledge
                                 of their specific situations
                             </p>
                             <h1 id = 'why-title'>Why Legalbrief</h1>
                             <p id = 'why'>
                                 Here at LegalBrief, we believe that the legal system
-                                should be something that protects and represents everyone. <br></br>
+                                should be something that protects and represents everyone.
                                 In order to achieve this, it needs to be accessible to everyone, 
                                 not just those who have access to legal representation
                             </p>
@@ -66,9 +66,9 @@ class AboutPage extends Component{
                         <div id = 'julian-picture'>pic</div>
                         <h3 id = 'founder-title'>Julian Jenkins Founder/ CEO</h3>
                         <p id = 'founder-bio'>
-                            Julian Jenkins is our Founder and brought a plethora of experience to LegalBrief. <br></br>
-                            With experience in the professional sports industry facilitating team operations and <br></br>
-                            working with a major Legal firm in Vancouver, British Columbia managing, and facilitating a <br></br>
+                            Julian Jenkins is our Founder and brought a plethora of experience to LegalBrief. 
+                            With experience in the professional sports industry facilitating team operations and 
+                            working with a major Legal firm in Vancouver, British Columbia managing, and facilitating a 
                             variety of corporate files. 
                         </p>
                     </div>

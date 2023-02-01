@@ -140,7 +140,7 @@
     font-size: 30px;
 }
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 900px){
     #home-container{
         background-color: black;
         font-family: Arial, Helvetica, sans-serif;
@@ -152,9 +152,9 @@
         background-size: cover;
         padding-left: 5%;
         text-align: center;
-        padding-top: 30px;
+        padding-top: 0px;
         padding-bottom: 30px;
-        height: 200px;
+        height: 150px;
     }
     
     #slogan-text{
@@ -176,12 +176,13 @@
     }
     
     #goal-right{
-        font-size: 60px;
+        font-size: 35px;
         padding-left: 50px;
         padding-bottom: 0px;
         padding-top: 30px;
         margin-bottom: 0px;
-        max-height: 150px;
+        max-height: 75px;
+        width: 300px;
     }
     
     #goal-content-1{
@@ -190,7 +191,8 @@
         word-spacing: 1px;
         font-weight: 10;
         line-height: 25px;
-        padding-top: 25px;
+        padding-top: 0px;
+        text-align: justify;
     }
     
     #goal-content-2{
@@ -200,12 +202,16 @@
         font-weight: 10;
         line-height: 25px;
         padding-top: 0px;
+        padding-bottom: 0px;
+        text-align: justify;
     }
     
     #how-we-help{
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 200px 200px;
         width: 100%;
         margin-left: 0px;
+        height: 200px
     }
     
     #how-we-help-title{
@@ -223,56 +229,55 @@
     }
     
     #hwh-icon-1{
-        height: 350px;
+        height: 200px;
         background-color: black;
         text-align: center;
         margin: auto;
         width: 50%;
-        padding: 10px;
-        margin-top: 30px;
+        font-size: 20px;
     }
         
     #hwh-icon-1 > img{
-        width: 200px;
+        width: 100px;
     }
     
     #hwh-icon-2{
-        height: 350px;
+        height: 200px;
         background-color: black;
         text-align: center;
         margin: auto;
         width: 50%;
-        padding: 10px;
+        font-size: 20px;
     }
 
     #hwh-icon-2 > img{
-        width: 200px;
+        width: 100px;
     }
     
     #hwh-icon-3{
-        height: 350px;
         background-color: black;
         text-align: center;
         margin: auto;
         width: 50%;
-        padding: 10px;
+        font-size: 20px;
+        height: 200px
     }
 
     #hwh-icon-3 > img{
-        width: 200px;
+        width: 100px;
     }
     
     #hwh-icon-4{
-        height: 350px;
         background-color: black;
         text-align: center;
         margin: auto;
         width: 50%;
-        padding: 10px;
+        font-size: 20px;
+        height: 200px
     }
 
     #hwh-icon-4 > img{
-        width: 200px;
+        width: 100px;
     }
 }
 

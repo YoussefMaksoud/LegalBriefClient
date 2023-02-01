@@ -149,7 +149,7 @@ html, body {
     line-height: 35px;
 }
 
-@media(max-width: 400px){
+@media(max-width: 900px){
     #about-container{
         background-color: black;
         font-family: Arial, Helvetica, sans-serif;
@@ -164,25 +164,32 @@ html, body {
     }
 
     #about-us{
-        /*background-image: url(../Assets//legal\ background.jpeg);*/
-        background-repeat: no-repeat;
         text-align: left;
         padding-left: 10%;
         padding-top: 15%;
-        font-size: 100px;
+        font-size: 70px;
         font-weight: 700;
         justify-content: center;
-        width: 345px;
+        width: 360px;
+        text-align: justify;
+    }
+
+    #about-content{
+        font-size: 25px;
+        line-height: 30px;
+        text-align: justify;
     }
 
     #inspiration{
         font-size: 14px;
-        line-height: 40px;
+        line-height: 30px;
+        text-align: justify;
     }
     
     #why{
         font-size: 14px;
-        line-height: 40px;
+        line-height: 30px;
+        text-align: justify;
     }
     
     #about-pic > img{
@@ -204,18 +211,12 @@ html, body {
 
     #about-left > p{
         font-size: 16px;
-        line-height: 40px;
+        line-height: 25px;
         width: 320px;
     }
     
     #about-title{
         font-size: 75px;
-    }
-    
-    #about-content{
-        font-size: 25px;
-        line-height: 65px;
-    
     }
     
     #about-pic > img{
@@ -250,10 +251,11 @@ html, body {
     }
     
     #core-content-1{
-        font-size: 20px;
-        text-align-last: auto;
-        line-height: 40px;
+        font-size: 16px;
+        text-align: justify;
+        line-height: 30px;
         padding-left: 5%;
+        width: 320px;
     }
     
     #core-value-2{
@@ -277,7 +279,7 @@ html, body {
     }
     
     #executive-title{
-        font-size: 65px;
+        font-size: 45px;
         padding-left: 5%;
     }
     
@@ -285,20 +287,23 @@ html, body {
         text-align: center;
         background-color: rgb(72, 108, 180);
         width: 300px;
-        height: 300px;
+        height: 150px;
         margin: auto;
         width: 50%;
         padding: 10px;
     }
     
     #founder-title{
-        font-size: 30px;
+        font-size: 28px;
         text-align: center;
     }
     
     #founder-bio{
-        font-size: 18px;
-        line-height: 50px;
-        width: 350px
+        font-size: 16px;
+        line-height: 30px;
+        text-align: justify;
+        width: 300px;
+        padding-left: 10%;
+        padding-right: 10%;
     }
 }
