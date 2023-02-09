@@ -14,7 +14,13 @@
 }
 
 #slogan{
-   background-image: url(../Assets/build-image.png);
+   background:
+   linear-gradient(
+       rgba(0, 0, 0, 0.4), 
+       rgba(0, 0, 0, 0.9)
+     ),
+     /* bottom, image */
+     url(../Assets/build-image.jpg);
    background-repeat: no-repeat;
    background-size: cover;
    text-align: center;

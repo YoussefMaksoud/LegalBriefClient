@@ -3,11 +3,14 @@ import '../Styling/Destination.css'
 import GoogleAd from '../Components/GoogleAd';
 
 class Destination extends Component{
+    constructor(props){
+        super(props)
+    }
     render(){
         return(
             <div id = 'dest-container'>
                 <div id = 'dest-left'>
-                    <h1 id = 'dest-title'>Destination title</h1>
+                    <h1 id = 'dest-title'>{this.props.title}</h1>
                     <hr id = 'dest-break'></hr>
                     <div id = 'dest-description'>Lorem Ipsum is simply dummy 
                     text of the printing and typesetting industry. 
@@ -21,7 +24,6 @@ class Destination extends Component{
                     desktop publishing software like Aldus PageMaker including 
                     versions of Lorem Ipsum.
                     </div>
-                    <button id = 'close'>close</button>
                 </div>
                 <div id = 'dest-right'>
                     ad

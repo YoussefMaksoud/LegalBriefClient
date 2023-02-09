@@ -17,7 +17,7 @@ html, body {
 }
 
 #about-us{
-    background-image: url(../Assets//legal\ background.jpeg);
+    background-image: url(../Assets/about-back.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     text-align: left;
@@ -67,6 +67,7 @@ html, body {
 
 #about-pic > img{
     width: 400px;
+    padding-left: 100px;
 }
 
 #about-right{
@@ -79,8 +80,15 @@ html, body {
 }
 
 #core-values{
-    background-image: url('../Assets/about_background.png');
+    background-image: url('../Assets/core-val.jpg');
     background-repeat: no-repeat;
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 1.0)
+      ),
+      /* bottom, image */
+      url('../Assets/core-val.jpg');
     background-size: cover;
     padding-bottom: 100px;
     padding-left: 10%;
@@ -114,7 +122,13 @@ html, body {
 }
 
 #executive-team{
-    background-image: url('../Assets/calgary.png');
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0.4), 
+        rgba(0, 0, 0, 0.9)
+      ),
+      /* bottom, image */
+      url('../Assets/exec-back.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     padding-left: 5%;

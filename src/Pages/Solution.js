@@ -4,6 +4,7 @@ import Footer from '../Components/Footer';
 import Option from '../Components/Option';
 import '../Styling/Solution.css';
 import RequestHelpers from '../Helpers/RequestHelpers';
+import Destination from './Destination';
 
 
 class SolutionPage extends Component{
@@ -11,7 +12,10 @@ class SolutionPage extends Component{
         super();
 
         this.state = {
-            option_list: []
+            option_list: [],
+            completed: 100,
+            current_title: "",
+            current_description: ""
         }
 
         this.setOptionInitial = this.setOptionInitial.bind(this);
@@ -25,41 +29,52 @@ class SolutionPage extends Component{
     setOptionInitial(){
         RequestHelpers.getInitialOptions().then((response) => {
             this.setState({option_list: response.data.message});
-            console.log(this.state.option_list[1]);
         }).catch(function(ex){
             console.log("error:", ex);
         });
     }
 
     nextPage(parent){
-        RequestHelpers.getNextOption(parent).then((response) => {
+        RequestHelpers.getNextOption(parent.option_id).then((response) => {
             this.setState({option_list: response.data.message});
-            console.log("Next Page");
-            console.log(this.state.option_list[0]);
+            this.setState({current_title: parent.option_name})
+            this.setState({current_description: parent.option_description})
+
+            if(response.data.message.length == 0){
+                console.log("done");
+                this.setState({completed: 0});
+            }
+            
         }).catch(function(ex){
             console.log("error:", ex);
         });
 
-        console.log(this.state.option_list);
     }
 
     render(){
         return(
             <div id = 'sol-container'>
                 <Navbar/>
-                <div id = 'option-container'>
-                    <h1>Questionnaire</h1>
-                    <h2>Please select the option that applies best:</h2>
-                    {this.state.option_list.map((item) => {
-                        return  <div className = "option-cont" onClick = {() => this.nextPage(item.option_id)}>
-                                    <Option id = "option" 
-                                            option_name = {item.option_name}
-                                            option_description = {item.option_description}
-                                            option_id = {item.option_id}
-                                    />
-                                </div>
-                    })}
-                </div>
+                
+                
+                {this.state.completed != 0 ? (
+                   <div id = 'option-container'>
+                        <h1>Questionnaire</h1>
+                        <h2>Please select the option that applies best:</h2>
+                        {this.state.option_list.map((item) => {
+                            return  <div className = "option-cont" onClick = {() => this.nextPage(item)}>
+                                        <Option id = "option" 
+                                                option_name = {item.option_name}
+                                                option_description = {item.option_description}
+                                                option_id = {item.option_id}
+                                        />
+                                    </div>
+                        })}
+                    </div> 
+                ) : (
+                    <Destination title = {this.state.current_title}/>
+                )}
+                    
                 <Footer/>
             </div>
         )
