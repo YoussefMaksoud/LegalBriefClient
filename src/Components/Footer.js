@@ -1,9 +1,9 @@
 import {React, Component} from 'react';
 import '../Styling/Footer.css';
 import {Link} from 'react-router-dom';
-import Phone from '../Assets/phone.png';
-import Email from '../Assets/emial.png';
-import LinkedIn from '../Assets/linkedin.png';
+import Phone from '../Assets/phone.svg';
+import Email from '../Assets/email.svg';
+import LinkedIn from '../Assets/linkedin.svg';
 
 class Footer extends Component{
     render(){

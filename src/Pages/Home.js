@@ -3,10 +3,10 @@ import { Component } from 'react';
 import '../Styling/Home.css';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
-import Light from '../Assets/light.png';
-import Apple from '../Assets/apple.png';
-import Pencil from '../Assets/pencil.png';
-import Scale from '../Assets/scale.png';
+import Light from '../Assets/light.svg';
+import Basics from '../Assets/basics.svg';
+import Pencil from '../Assets/pencil.svg';
+import Solution from '../Assets/solution.svg';
 import Cons from '../Assets/home_cons.png';
 
 class HomePage extends Component{
@@ -19,7 +19,7 @@ class HomePage extends Component{
                 </div>
                 <div id = 'goal'>
                     <div id = 'goal-right'>
-                        This Is Legalbrief
+                        This Is LegalBrief
                     </div>
                     <div id = 'goal-left'>
                         <p id = 'goal-content-1'>Here at LegalBrief, we want to provide the legal
@@ -38,7 +38,7 @@ class HomePage extends Component{
                 <h2 id = 'how-we-help-title'>How We Help</h2>
                 <div id = 'how-we-help'>
                     <div id = 'hwh-icon-1'>
-                        <img src = {Apple}></img>
+                        <img src = {Basics}></img>
                         <h4>Basics</h4>
                     </div>
                     <div id = 'hwh-icon-2'>
@@ -50,7 +50,7 @@ class HomePage extends Component{
                         <h4>Resources</h4>
                     </div>
                     <div id = 'hwh-icon-4'>
-                        <img src = {Scale}></img>
+                        <img src = {Solution}></img>
                         <h4>Solutions</h4>
                     </div>
                 </div>

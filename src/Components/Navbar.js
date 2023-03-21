@@ -55,7 +55,7 @@ class Navbar extends Component{
                             <span className = 'h-spans'>___</span>
                         </div>
                     </div>
-                    <ul className = "NavMenu-Mobile">
+                    <div className = "NavMenu-Mobile">
                             {NavItems.map((item, index) => {
                                 return(
                                     <li key = {index}>
@@ -70,7 +70,7 @@ class Navbar extends Component{
                                     display: ${this.state.navOpen ? 'inline' : 'none'};
                                 }
                             `}</style>
-                    </ul>
+                    </div>
             </div>
             )
         }else{

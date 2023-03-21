@@ -1,5 +1,6 @@
 import {React, Component} from 'react';
 import '../Styling/Option.css';
+import Collapsible from 'react-collapsible';
 
 class Option extends Component{
     render(){
@@ -9,6 +10,7 @@ class Option extends Component{
                 <div id = 'op-content'>
                     <h3 id = 'op-name'>{this.props.option_name}</h3>
                     <p id = 'op-description'>{this.props.option_description}</p>
+                    
                 </div>
                 <div id = 'more-info'>More Info</div>        
             </div>

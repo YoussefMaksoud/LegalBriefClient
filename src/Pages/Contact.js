@@ -2,9 +2,9 @@ import {React, Component} from 'react';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 import '../Styling/Contact.css'
-import Phone from '../Assets/phone.png';
-import Email from '../Assets/emial.png';
-import LinkedIn from '../Assets/linkedin.png';
+import Phone from '../Assets/phone.svg';
+import Email from '../Assets/email.svg';
+import LinkedIn from '../Assets/linkedin.svg';
 import RequestHelpers from '../Helpers/RequestHelpers';
 import GoogleAd from '../Components/GoogleAd';
 import FaqPage from './Faq';
@@ -73,7 +73,7 @@ class ContactPage extends Component{
                         <div id = 'point-of-contact'>
                             <h3 id = 'poc-title'>Points of Contact</h3>
                             <div className = 'poc-item'>
-                                <div className = 'poc-icon'><img src = {Email}></img></div>
+                                <div className = 'poc-icon'><img src = {Email} alt = "Bootstrap"></img></div>
                                 <div className = 'poc-content'>
                                     <h4 className = 'poc-type'>Email</h4>
                                     <h4 className = 'poc'>julianjenkins9@gmail.com</h4>

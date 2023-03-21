@@ -125,13 +125,14 @@ hr{
     }
     
     #footer-content-left{
-        padding-left: 10%;
-        padding-right: 50px;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        width: 80vw;
         font-size: 20px;
         line-height: 28px;
         text-align: justify;
         background-color: #0D0D0D;
-        color: #5d5d5d
+        color: #ffffff
         
     }
     

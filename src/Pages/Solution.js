@@ -28,7 +28,7 @@ class SolutionPage extends Component{
 
     setOptionInitial(){
         RequestHelpers.getInitialOptions().then((response) => {
-            this.setState({option_list: response.data.message});
+            this.setState({option_list: response.data});
         }).catch(function(ex){
             console.log("error:", ex);
         });
@@ -36,11 +36,13 @@ class SolutionPage extends Component{
 
     nextPage(parent){
         RequestHelpers.getNextOption(parent.option_id).then((response) => {
-            this.setState({option_list: response.data.message});
+            this.setState({option_list: response.data});
             this.setState({current_title: parent.option_name})
             this.setState({current_description: parent.option_description})
 
-            if(response.data.message.length == 0){
+            console.log(response.data)
+
+            if(response.data.length == 0){
                 console.log("done");
                 this.setState({completed: 0});
             }
@@ -72,7 +74,7 @@ class SolutionPage extends Component{
                         })}
                     </div> 
                 ) : (
-                    <Destination title = {this.state.current_title}/>
+                    <Destination title = {this.state.current_title} description = {this.state.current_description}/>
                 )}
                     
                 <Footer/>
