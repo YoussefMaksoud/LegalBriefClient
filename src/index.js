@@ -14,6 +14,7 @@ import SolutionPage from './Pages/Solution';
 import FaqPage from './Pages/Faq';
 import Destination from './Pages/Destination';
 import Navbar from './Components/Navbar';
+import FlipCard from './Components/FlipCard';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -24,7 +25,7 @@ root.render(
         <Route path = '/about' element = {<AboutPage/>}></Route>
         <Route path = '/contact' element = {<ContactPage/>}></Route>
         <Route path = '/solution' element = {<SolutionPage/>}></Route>
-        <Route path = '/results' element = {<Navbar/>}/>
+        <Route path = '/results' element = {<FlipCard/>}/>
       </Routes>
     </Router>
   </React.StrictMode>

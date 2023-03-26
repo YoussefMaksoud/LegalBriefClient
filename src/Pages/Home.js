@@ -8,6 +8,7 @@ import Basics from '../Assets/basics.svg';
 import Pencil from '../Assets/pencil.svg';
 import Solution from '../Assets/solution.svg';
 import Cons from '../Assets/home_cons.png';
+import FlipCard from '../Components/FlipCard';
 
 class HomePage extends Component{
     render(){
@@ -38,20 +39,24 @@ class HomePage extends Component{
                 <h2 id = 'how-we-help-title'>How We Help</h2>
                 <div id = 'how-we-help'>
                     <div id = 'hwh-icon-1'>
-                        <img src = {Basics}></img>
-                        <h4>Basics</h4>
+                        <FlipCard src = {Basics} name = 'Basics' info = 
+                        ''
+                        />
                     </div>
                     <div id = 'hwh-icon-2'>
-                        <img src = {Pencil}></img>
-                        <h4>Questionnaire</h4>
+                        <FlipCard src = {Pencil} name = 'Questionnaire' info = 
+                        'Using our questionnaire, we are able to identify the applicable laws and provide beneficial information to users'
+                        />
                     </div>
                     <div id = 'hwh-icon-3'>
-                        <img src = {Light}></img>
-                        <h4>Resources</h4>
+                        <FlipCard src = {Light} name = 'Resources' info = 
+                        'Based on your answers, we provide options for the potential next steps in the users legal journey'
+                        />
                     </div>
                     <div id = 'hwh-icon-4'>
-                        <img src = {Solution}></img>
-                        <h4>Solutions</h4>
+                        <FlipCard src = {Solution} name = 'Solution' info =
+                        'We provide the necessary options to allow users to decide what the most beneficial next steps to solve their respective situations'
+                        />
                     </div>
                 </div>
                 <Footer/>
