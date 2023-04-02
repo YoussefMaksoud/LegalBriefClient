@@ -29,6 +29,11 @@ class RequestHelpers{
             }
         );
     }
+
+    updateClickCount(id){
+        console.log(id);
+        axios.put('https://legalbrief.herokuapp.com/inc_click/' + id);
+    }
 }
 
 export default new RequestHelpers();

@@ -14,6 +14,7 @@ class Destination extends Component{
                     <hr id = 'dest-break'></hr>
                     <div id = 'dest-description'>{this.props.description} </div>
                 </div>
+                <div id = 'dest-sep'></div>
                 <div id = 'dest-right'>
                     ad
                     <GoogleAd slot = "8950518636"/>

@@ -25,3 +25,8 @@
 #option-container > h2{
     margin-left: 9%;
 }
+
+
+.option-cont > div{
+   margin-left: 100px;
+}

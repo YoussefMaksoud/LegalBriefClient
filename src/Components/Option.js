@@ -5,15 +5,14 @@ import Collapsible from 'react-collapsible';
 class Option extends Component{
     render(){
         return(
-            <div id = 'op-container'>
-                <div id = 'check'></div>
-                <div id = 'op-content'>
-                    <h3 id = 'op-name'>{this.props.option_name}</h3>
-                    <p id = 'op-description'>{this.props.option_description}</p>
-                    
+                <div id = "opt-cont">
+                        <div id = 'opt-name' onClick = {this.props.onClick}>{this.props.option_name}</div>
+                        <div id = "check"></div>
+                        <Collapsible contentInnerCLassName = 'content' classParentString = "op-container" trigger = "More-Info">
+                            <div id = 'op-desc'>{this.props.option_description}</div>
+                        </Collapsible>  
                 </div>
-                <div id = 'more-info'>More Info</div>        
-            </div>
+                
         )
     }
 }

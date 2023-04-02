@@ -5,7 +5,7 @@ import Collapsible from 'react-collapsible';
 class FaqItem extends Component{
     render(){
         return(
-            <Collapsible id = 'faq-item-container' trigger = "Question">
+            <Collapsible classParentString ='faq-item-container' trigger = "Question">
                 <p id = 'response'>response</p>
             </Collapsible>
         )

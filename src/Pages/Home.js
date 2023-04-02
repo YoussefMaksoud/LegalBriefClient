@@ -8,7 +8,10 @@ import Basics from '../Assets/basics.svg';
 import Pencil from '../Assets/pencil.svg';
 import Solution from '../Assets/solution.svg';
 import Cons from '../Assets/home_cons.png';
+import Canada from '../Assets/canada.png';
+import USA from '../Assets/usa.png';
 import FlipCard from '../Components/FlipCard';
+import { Link } from 'react-router-dom';
 
 class HomePage extends Component{
     render(){
@@ -59,6 +62,15 @@ class HomePage extends Component{
                         />
                     </div>
                 </div>
+                <hr id = 'seperator'></hr>
+                <h1 id = 'survey-header'>Need assistance diagnosing a legal problem? Where are you located</h1>
+                <div id = 'to-survey'>
+                    
+                    <Link id = 'canada' to = '/solution'><img src = {Canada}></img></Link>
+                    
+                    <Link id = 'usa' to = '/solution'><img src = {USA}></img></Link>
+                </div>
+                <hr id = 'seperator'></hr>
                 <Footer/>
             </div>
         )

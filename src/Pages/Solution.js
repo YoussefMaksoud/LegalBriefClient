@@ -35,6 +35,8 @@ class SolutionPage extends Component{
     }
 
     nextPage(parent){
+        RequestHelpers.updateClickCount(parent);
+
         RequestHelpers.getNextOption(parent.option_id).then((response) => {
             this.setState({option_list: response.data});
             this.setState({current_title: parent.option_name})
@@ -51,6 +53,8 @@ class SolutionPage extends Component{
             console.log("error:", ex);
         });
 
+        
+
     }
 
     render(){
@@ -64,8 +68,9 @@ class SolutionPage extends Component{
                         <h1>Questionnaire</h1>
                         <h2>Please select the option that applies best:</h2>
                         {this.state.option_list.map((item) => {
-                            return  <div className = "option-cont" onClick = {() => this.nextPage(item)}>
+                            return  <div className = "option-cont">
                                         <Option id = "option" 
+                                                onClick = {() => this.nextPage(item)}
                                                 option_name = {item.option_name}
                                                 option_description = {item.option_description}
                                                 option_id = {item.option_id}
