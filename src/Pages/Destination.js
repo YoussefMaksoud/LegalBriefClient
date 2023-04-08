@@ -1,6 +1,8 @@
 import {React, Component} from 'react';
 import '../Styling/Destination.css'
 import GoogleAd from '../Components/GoogleAd';
+// ES Modules
+import parse from 'html-react-parser';
 
 class Destination extends Component{
     constructor(props){
@@ -12,7 +14,7 @@ class Destination extends Component{
                 <div id = 'dest-left'>
                     <h1 id = 'dest-title'>{this.props.title}</h1>
                     <hr id = 'dest-break'></hr>
-                    <div id = 'dest-description'>{this.props.description} </div>
+                    <div id = 'dest-description'>{parse(this.props.description)} </div>
                 </div>
                 <div id = 'dest-sep'></div>
                 <div id = 'dest-right'>

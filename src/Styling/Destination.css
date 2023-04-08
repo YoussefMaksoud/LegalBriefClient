@@ -9,6 +9,7 @@
 
 #dest-left{
     background-color: black;
+    overflow-y: scroll;
     flex-grow: 1;
     width: 100%;
 }
