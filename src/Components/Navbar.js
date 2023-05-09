@@ -29,15 +29,8 @@ class Navbar extends Component{
     }
 
     handleMenuClick = () => {
-        if(this.state.navOpen){
-            this.setState({navOpen: false});
-            console.log("close");
-        }else{
-            this.setState({navOpen: true});
-            console.log("open");
-        }
-        
-    }
+        this.setState(prevState => ({ navOpen: !prevState.navOpen }));
+      }
 
     componentDidMount(){
         window.addEventListener('resize', this.updateDimenstions);
@@ -55,7 +48,7 @@ class Navbar extends Component{
                             <span className = 'h-spans'>___</span>
                         </div>
                     </div>
-                    <div className = "NavMenu-Mobile">
+                    <div className = {`NavMenu-Mobile ${this.state.navOpen ? 'open' : ''}`}>
                             {NavItems.map((item, index) => {
                                 return(
                                     <li key = {index}>

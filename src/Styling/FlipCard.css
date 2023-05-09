@@ -58,15 +58,15 @@
     }
     
     #front:hover{
-        box-shadow: 10px;
-    }
+        background: #090909;
+        box-shadow: 2px 2px 2px #343E9A;
+        transition: ease-in-out 0.5s;    }
 
     #icon{
         width: 100px;
     }
 
-    
-    
+
     #back{
         width: 50%;
         height: 200px;

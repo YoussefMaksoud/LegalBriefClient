@@ -15,6 +15,7 @@
     width:250px;
     padding-left: 12px;
     padding-top: 15px;
+    flex-grow: 1;
 }
 
 #opt-desc{
@@ -68,18 +69,7 @@
     flex-grow: 1;
 }
 
-#more-info{
-    width: 100px;
-    text-align: center;
-    padding: 40px 0;
-    background-color: red;
-}
 
-#more-info:hover{
-    background-color: rgb(72, 72, 72);
-    transition: ease-in-out 0.4s;
-    border-radius: 40px;
-}
 
 #op-name{
     margin-bottom: 20px;

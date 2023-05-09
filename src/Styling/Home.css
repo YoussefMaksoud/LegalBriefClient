@@ -1,7 +1,6 @@
 #home-container{
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
-
 }
 
 #seperator{
@@ -195,6 +194,7 @@
     #home-container{
         background-color: black;
         font-family: Arial, Helvetica, sans-serif;
+        width:100vw;
     }
     
     #slogan{
@@ -207,75 +207,74 @@
                 url(../Assets/build-image.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        padding-left: 5%;
         text-align: center;
         padding-top: 0px;
         padding-bottom: 30px;
-        height: 15vh;
+        height: 45vh;
     }
     
     #slogan-text{
         color: white;
-        font-weight: 200;
-        font-size: 25px;
-        padding-right: 20px;
-        padding-top: 50px;
-        padding-bottom: 75px;
+        font-weight: 600;
+        font-size: 30px;
+        padding:10%;
+        padding-top:30%;
+        text-align: center;
+        margin: 20px;
+        width:80%
     }
     
     #goal{
         flex-direction: column;
-        height: 600px;
+        height: 400;
     }
     
     #goal-left{
     }
     
     #goal-right{
-        font-size: 7vw;
-        padding-left: 7vw;
-        padding-bottom: 0px;
-        padding-top: 30px;
-        margin-bottom: 0px;
-        max-height: 75px;
-        width: 93vw;
+        font-size: 45px;
+        max-height: 60px;
+        padding-top: 20px;
+        padding:10%;
+        width:80%;
     }
     
     #goal-content-1{
         color: white;
-        padding: 50px;
         word-spacing: 1px;
         font-weight: 10;
         line-height: 25px;
-        padding-top: 0px;
-        text-align: justify;
+        padding:10%;
+        width: 80%;
+        font-size: 17px;
+        padding-top:0px;
     }
     
     #goal-content-2{
         color: white;
-        padding: 50px;
         word-spacing: 1px;
         font-weight: 10;
         line-height: 25px;
-        padding-top: 0px;
-        padding-bottom: 0px;
-        text-align: justify;
+        padding:10%;
+        width: 80%;
+        font-size: 17px;
+        padding-top:0px;
+
     }
     
     #how-we-help{
         display: grid;
         grid-template-columns: 50vw 50vw;
         width: 100%;
-        margin-left: 0px;
-        height: 600px
+        height: 600px;
+        margin:0px;
     }
     
     #how-we-help-title{
-        color: white;
-        font-weight: 900;
-        font-size: 30px;
-        text-overflow: clip;
-        height: 100px;
+        font-size: 10vw;
+        max-height: 60px;
+        padding-top: 20px;
     }
 
     #img-1{
@@ -289,7 +288,7 @@
         background-color: black;
         text-align: center;
         margin: auto;
-        width: 50%;
+        width: 100%;
         font-size: 15px;
     }
         
@@ -302,7 +301,7 @@
         background-color: black;
         text-align: center;
         margin: auto;
-        width: 50%;
+        width: 100%;
         font-size: 15px;
     }
 
@@ -314,7 +313,7 @@
         background-color: black;
         text-align: center;
         margin: auto;
-        width: 50%;
+        width: 100%;
         font-size: 15px;
         height: 200px
     }
@@ -327,7 +326,7 @@
         background-color: black;
         text-align: center;
         margin: auto;
-        width: 50%;
+        width: 100%;
         font-size: 15px;
         height: 200px
     }

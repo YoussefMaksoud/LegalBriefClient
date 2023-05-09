@@ -19,11 +19,13 @@
     transform: translate(0, -50%);
     padding: 10px;
     padding-left: 10%;
+    
 }
 
 #any-questions{
-    font-size: 30px;
-    padding-left: 200px;
+    font-size: 40px;
+    padding-left: 5%;
+    height: 40px;
 }
 
 #contact-content{
@@ -36,7 +38,7 @@
 
 #contact-form-left{
     flex-grow: 1;
-    padding-left: 200px;
+    padding-left: 5%;
     padding-top: 50px;
 }
 
@@ -98,8 +100,8 @@
 
 #point-of-contact{
     flex-grow: 1;
-    padding-left: 10%;
-    padding-top: 50px;
+    padding-left: 5%;
+    margin-top: 60px;
 }
 
 #poc-title{
@@ -186,8 +188,8 @@
         background-color: #0C0C0C;
         border-color: #343E9A;
         border-radius: 3px;
-        max-width: 300px;
-        min-width: 300px;
+        max-width: 90%;
+        min-width: 90%;
         max-height: 200px;
         min-height: 150px;
     }
@@ -207,7 +209,7 @@
     
     #contact-form > label > input{
         height: 50px;
-        width: 300px;
+        width: 90%;
         margin-bottom: 20px;
         border-width: 1px;
         background-color: #0C0C0C;

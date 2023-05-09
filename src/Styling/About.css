@@ -178,35 +178,63 @@ html, body {
 
     #about-us{
         text-align: left;
-        padding-left: 10vw;
-        padding-top: 15%;
+        padding:10%;
+        padding-top:25%;
         font-size: 70px;
         font-weight: 700;
-        justify-content: center;
-        width: 90vw;
+        width: 80%;
         text-align: justify;
+        background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.4), 
+            rgba(0, 0, 0, 0.9)
+            ),
+            /* bottom, image */
+            url(../Assets/about-back.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     #about-content{
-        font-size: 25px;
-        line-height: 30px;
-        
+        color: white;
+        word-spacing: 1px;
+        font-weight: 100;
+        line-height: 20px;
+        font-size: 19px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        display:inline;
     }
 
     #inspiration{
-        font-size: 14px;
-        line-height: 30px;
-        text-align: justify;
+        color: white;
+        word-spacing: 1px;
+        font-weight: 100;
+        line-height: 20px;
+        font-size: 19px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        display:inline;
     }
     
     #why{
-        font-size: 14px;
-        line-height: 30px;
-        text-align: justify;
+        color: white;
+        word-spacing: 1px;
+        font-weight: 100;
+        line-height: 20px;
+        font-size: 19px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        display:inline;
     }
     
     #about-pic > img{
         max-height: 400px;
+        margin: auto;
+        margin:20%
     }
 
     #about-title{
@@ -265,10 +293,9 @@ html, body {
     
     #core-content-1{
         font-size: 16px;
-        text-align: justify;
         line-height: 30px;
         padding-left: 5%;
-        width: 320px;
+        width: 90%;
     }
     
     #core-value-2{
@@ -293,7 +320,7 @@ html, body {
     
     #executive-title{
         font-size: 45px;
-        padding-left: 5%;
+        text-align: center;
     }
     
     #julian-picture{
@@ -313,9 +340,8 @@ html, body {
     
     #founder-bio{
         font-size: 16px;
-        line-height: 30px;
-        text-align: justify;
-        width: 300px;
+        line-height: 25px;
+        width: 80%;
         padding-left: 10%;
         padding-right: 10%;
     }

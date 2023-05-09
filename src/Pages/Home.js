@@ -19,7 +19,7 @@ class HomePage extends Component{
             <div id = 'home-container'>
                 <Navbar/>
                 <div id = 'slogan'>
-                    <h1 id = 'slogan-text'>Get Help Navigating the Complexities of the Canadian Justice System</h1>
+                    <h1 id = 'slogan-text'>Navigate the Complexities of the Canadian Justice System</h1>
                 </div>
                 <div id = 'goal'>
                     <div id = 'goal-right'>

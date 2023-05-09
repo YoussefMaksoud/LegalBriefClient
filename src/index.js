@@ -16,6 +16,7 @@ import Destination from './Pages/Destination';
 import Navbar from './Components/Navbar';
 import FlipCard from './Components/FlipCard';
 import Option from './Components/Option';
+import Modal from './Components/Modal';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
